@@ -81,7 +81,7 @@ h1, h2, h3 {
 
 .icon span {
     font-family: 'Press Start 2P', monospace;
-    font-size: 0.1em;
+    font-size: 0.6em;
     font-weight: 600;
     letter-spacing: 0.5px;
     color: #fff;
@@ -142,5 +142,6 @@ h1, h2, h3 {
     color: #fff;
     text-shadow: 1px 1px 4px #000;
 }
+
 
 
