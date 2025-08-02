@@ -1,0 +1,148 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    line-height: 1.8;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    user-select: none; /* Prevents text selection */
+}
+
+.img-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    border: 4px solid #00fff7; /* Neon cyan border */
+    border-radius: 18px;
+    box-shadow:
+        0 0 20px #00fff7,
+        0 0 40px #00fff7,
+        0 0 60px #00fff7,
+        0 0 80px #00fff7; /* Multiple glows for CGI effect */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    text-align: center;
+    line-height: 2;
+}
+
+.description2 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ccc;
+    line-height: 1.2;
+}
+.icon span {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8em; /* Adjust as needed */
+    /* ...other styles... */
+}
+.icon img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+    animation: wiggle 1.2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+body {
+            background: url('sui chan.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .desktop-icons {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            gap: 30px;
+        }
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 4px #000;
+            cursor: pointer;
+            width: 80px;
+        }
+        .icon img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 8px;
+        }
+        .icon span {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.55em; /* Adjust as needed */
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: #fff;
+        text-shadow: 1px 1px 6px #222;
+    }
+        .taskbar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            background: rgba(30, 30, 30, 0.85);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .start-btn {
+            width: 36px;
+            height: 36px;
+            margin-right: 12px;
+            background: #00fff7;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #222;
+            font-size: 1.2em;
+        }
+        .taskbar-time {
+            margin-left: auto;
+            color: #fff;
+            font-family: monospace;
+        }
+        .start-btn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+        .taskbar div {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.2em;
+            color: #fff;
+            text-shadow: 1px 1px 4px #000;
+        }

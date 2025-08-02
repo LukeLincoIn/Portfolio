@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>My Desktop Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="desktop-icons">
+        <div class="icon" onclick="window.location.href='index.html'">
+            <img src="Pc.png" alt="About Me">
+            <span>My Pc</span>
+        </div>
+        <div class="icon" onclick="window.location.href='resume.html'">
+            <img src="folder.png" alt="About Me">
+            <span>Resume</span>
+        </div>
+    </div>
+    <div class="taskbar">
+        <div class="start-btn">
+            <img src="windows.png" alt="windows">
+        </div>
+        <div style="color:#fff;">My Desktop</div>
+        <div class="taskbar-time" id="taskbar-time"></div>
+    </div>
+    <script> //Clock for desktop
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('taskbar-time').textContent =
+                now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        }
+        setInterval(updateTime, 1000);
+                updateTime();
+    </script>
+</body>
+</html>
